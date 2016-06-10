@@ -1,8 +1,8 @@
 # ncurses-pony
 An ncurses library for pony
 
-##
-Using pony-stable for dependency management, add the following to your `bundle.json` file.
+## Usage
+Using [pony-stable](https://github.com/jemc/pony-stable) for dependency management, add the following to your `bundle.json` file:
 
 ```
 {
