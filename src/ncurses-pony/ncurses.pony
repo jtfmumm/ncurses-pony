@@ -45,7 +45,7 @@ primitive Nc
     end
 
   // Input
-  fun getch(): U16 => @getch[U16]()
+  fun getch(): I32 => @getch[I32]()
 
   // Color
   fun start_color() => @start_color[None]()
