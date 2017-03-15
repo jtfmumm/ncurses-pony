@@ -47,6 +47,10 @@ primitive Nc
   // Input
   fun getch(): I32 => @getch[I32]()
 
+  // Terminal
+  fun getmaxyx(window: Pointer[Window], y: I32, x: I32) =>
+    @getmaxyx[None](window, y, x)
+
   // Color
   fun start_color() => @start_color[None]()
   fun init_pair(pair_id: I32, foreground: I32, background: I32) =>
