@@ -1,5 +1,4 @@
 use "lib:ncurses"
-use "lib:_util"
 
 primitive Window
 
@@ -47,13 +46,6 @@ primitive Nc
 
   // Input
   fun getch(): I32 => @getch[I32]()
-
-  // Terminal
-  fun getmaxx(window: Pointer[Window]): I32 =>
-    @get_maxx[I32](window)
-
-  fun getmaxy(window: Pointer[Window]): I32 =>
-    @get_maxy[I32](window)
 
   // Color
   fun start_color() => @start_color[None]()
